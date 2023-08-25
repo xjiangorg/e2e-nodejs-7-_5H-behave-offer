@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nodejs-health-check-gcip
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/quay_xjiang/rhtap-demo-ssfi-tenant/e2e-nodejs/nodejs-health-check-gcip@sha256:0da54ccd0494bc95700993664989bdd72a5f592f26f2e9caa11a1ab22d3469d7
+        name: my-nodejs
+        resources: {}
+status: {}
